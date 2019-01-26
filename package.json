@@ -17,9 +17,39 @@
 		"commands": [
 			{
 				"command": "extension.helloWorld",
-				"title": "Hello World"
+				"title": "Start Jira issue"
 			}
-		]
+		],
+		"configuration": {
+			"title": "Jira Commit",
+			"properties": {
+				"jiracommit.baseUrl": {
+					"type": "string",
+					"default": null,
+					"description": "Company domain for Jira (https://[company].atlassian.net)"
+				},
+				"jiracommit.issuePrefix": {
+					"type": "string",
+					"default": null,
+					"description": "The prefix for the issues (XX-1234)"
+				},
+				"jiracommit.topicCustomField": {
+					"type": "string",
+					"default": null,
+					"description": "The custom field defined on Jira issues to identify the topic"
+				},
+				"jiracommit.email": {
+					"type": "string",
+					"default": null,
+					"description": "Login email to connect to Jira through the API"
+				},
+				"jiracommit.jiraAccessToken": {
+					"type": "string",
+					"default": null,
+					"description": "API access token to connect to Jira through the API"
+				}
+			}
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
@@ -34,5 +64,10 @@
 		"tslint": "^5.8.0",
 		"@types/node": "^8.10.25",
 		"@types/mocha": "^2.2.42"
+	},
+	"dependencies": {
+		"@types/request-promise-native": "^1.0.15",
+		"request": "^2.88.0",
+		"request-promise-native": "^1.0.5"
 	}
 }

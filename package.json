@@ -1,7 +1,7 @@
 {
 	"name": "jiracommit",
 	"displayName": "JiraCommit",
-	"description": "",
+	"description": "An extension for vscode that takes a jira ticket and fills in the commit message",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.30.0"
@@ -10,13 +10,13 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:extension.helloWorld"
+		"onCommand:extension.jiraCommit"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "extension.helloWorld",
+				"command": "extension.jiraCommit",
 				"title": "Start Jira issue"
 			}
 		],

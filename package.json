@@ -1,6 +1,8 @@
 {
 	"name": "jiracommit",
 	"displayName": "JiraCommit",
+	"publisher": "recallq",
+	"repository": { "url": "https://github.com/jeroendeswaef/vscode-jira-commit" },
 	"description": "An extension for vscode that takes a jira ticket and fills in the commit message",
 	"version": "0.0.1",
 	"engines": {
